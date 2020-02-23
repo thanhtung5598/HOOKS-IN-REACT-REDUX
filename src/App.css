@@ -30,3 +30,8 @@
   .filter--active {
     border-bottom: 1px solid black;
   }
+
+.basic-use{
+  margin-top: 5rem;
+  font-size: 50px;
+}
