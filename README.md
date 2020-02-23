@@ -1,3 +1,11 @@
+Module should be install
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.4",
+    "jest": "^24.9.0",
+    "react-test-renderer": "^16.12.0"
+    
+				----------------------------------------------------------------
 React Redux now offers a set of hook APIs alternative connect() Higher Order Component
 As with connect(), you should start by wrapping your entire application in a <Provider> component
 The selector is approximately equivalent to the mapStateToProps argument to connect
