@@ -1,68 +1,22 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React Redux now offers a set of hook APIs alternative connect() Higher Order Component
+As with connect(), you should start by wrapping your entire application in a <Provider> component
+The selector is approximately equivalent to the mapStateToProps argument to connect
+However, there are some differences between the selectors passed to useSelector() and a mapState function:
+	The selector may return any value as a result, not just an object.
+	The selector function does not receive an ownProps argument.However, props can be used through closure
 
-## Available Scripts
+When the function component renders, the provided selector function will be called and its result will be returned from the useSelector() hook.
 
-In the project directory, you can run:
+You may call useSelector() multiple times within a single function component.
 
-### `yarn start`
+With useSelector() returning a new object every time
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+*Equality Comparisons and Updates*
+_ connect() just compared the individual fields. With useSelector(), returning a new object every time
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+What is the difference of using hooks or connect to my React-Redux project ?
+There are two major differences:
+	*Scope
+	Connect can be used with both React class components and function components whereas hooks can be used with function components only.
+Việc dùng useSelector sẽ giúp bạn quản lý redux state chặt chẽ hơn.
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
