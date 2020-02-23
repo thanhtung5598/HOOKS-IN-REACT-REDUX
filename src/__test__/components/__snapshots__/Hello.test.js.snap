@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Hello component 1`] = `
+<div>
+  <h1>
+    Hello
+  </h1>
+  <Link
+    title="Default title"
+    url="/link/to/test"
+  />
+</div>
+`;

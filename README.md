@@ -28,3 +28,13 @@ There are two major differences:
 	Connect can be used with both React class components and function components whereas hooks can be used with function components only.
 Việc dùng useSelector sẽ giúp bạn quản lý redux state chặt chẽ hơn.
 
+				----------------------------------------------------------------
+Jest là một testing framework với mục đích là để kiểm thử javascript cũng như React.
+Quy định viết test thì các file dùng để kiểm thử đều đặt trong thư mục __test__
+tên file test tương ứng với file gốc với phần mở rộng là .test.js hoặc .spec.js.
+
+******** Snapshot testing dùng module react-test-rendere
+******** Matchers:toBe là một trong những matchers cua Jest.
+******** Enzyme: là một tiện ích dùng trong kiểm thử Javascript cho React.
+         Shallow Rendering & Full DOM Rendering
+
