@@ -1,5 +1,5 @@
 import React from 'react';
-import Hello from './../../components/TestingDemo/Hello';
+import Hello from './../components/TestingDemo/Hello';
 import { shallowToJson } from 'enzyme-to-json';
 import { shallow } from 'enzyme';
 
